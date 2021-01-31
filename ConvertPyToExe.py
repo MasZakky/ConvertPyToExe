@@ -81,8 +81,6 @@ class database:
         global default
         folder=default + '\\file\\' + name
         File=['pyinstaller', '--onefile', '--windowed', 
-        # "--add-binary='/System/Library/Frameworks/Tk.framework/Tk':'tk'",
-        # "--add-binary='/System/Library/Frameworks/Tcl.framework/Tcl':'tcl'"
         '--name', name]
         f_build=default +'\\build'
         f_dist=default +'\\dist'
@@ -123,7 +121,7 @@ class database:
 
         time.sleep(1)
         gui.Quit()
-        # a=os.popen("start https://github.com/MasZakky")
+        a=os.popen("start https://github.com/MasZakky")
 
     def checkData(self, script, name, logo):
         Error=False
