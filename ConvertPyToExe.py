@@ -245,24 +245,24 @@ class Gui:
         self.myGUI.destroy()
     
 def main():
-    # def PIP_Install():
-    #     gui=GuiInfo()
-    #     gui.Label('Install "pyinstaller"')
-    #     gui.Update()
-    #     os.system('start /wait pip install pyinstaller')
-    #     gui.Label('Done')
-    #     time.sleep(2)
-    #     gui.Quit()
-    #     import PyInstaller
+    def PIP_Install():
+        gui=GuiInfo()
+        gui.Label('Install "pyinstaller"')
+        gui.Update()
+        os.system('start /wait cmd /c pip install pyinstaller')
+        gui.Label('Done')
+        time.sleep(2)
+        gui.Quit()
+        import PyInstaller
 
-    # try:
-    #     import PyInstaller
-    # except ImportError:
-    #     PIP_Install()
-    # except ImportWarning:
-    #     PIP_Install()
-    # except Exception:
-    #     PIP_Install()
+    try:
+        import PyInstaller
+    except ImportError:
+        PIP_Install()
+    except ImportWarning:
+        PIP_Install()
+    except Exception:
+        PIP_Install()
 
     try:
         Gui(database())
