@@ -1,7 +1,6 @@
 import os, time, re, time
 import tkinter as tk
-from tkinter import ttk, filedialog, PhotoImage
-
+from tkinter import ttk, filedialog
 default=os.getcwd()
 
 class GuiInfo:
@@ -191,7 +190,7 @@ class Gui:
         self.myGUI.resizable(False, False)
         self.myGUI.columnconfigure(0, weight=1)
         self.myGUI.rowconfigure(0, weight=1)
-        self.myGUI.iconphoto(False, PhotoImage(file='logo.png'))
+        self.myGUI.iconbitmap('logo.ico')
 
         #Frame
         self.GUI=ttk.Frame(self.myGUI)
